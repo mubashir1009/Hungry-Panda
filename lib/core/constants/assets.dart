@@ -1,0 +1,16 @@
+final String bucket = 'assets/svg/bucket.svg';
+final String basket = 'assets/svg/basket.svg';
+final String filter = 'assets/svg/filter.svg';
+final String basket2 = 'assets/png/basket.png';
+final String menu = 'assets/svg/menu.svg';
+final String bucket2 = 'assets/png/bucket.png';
+final String bucket3 = 'assets/png/bucket2.png';
+final String item1 = 'assets/png/item1.png';
+final String item2 = 'assets/png/item2.png';
+final String bucketShadow = 'assets/svg/bucket_shadow.svg';
+final String appLogo = 'assets/png/app_logo.png';
+final String welcomeScreenImage = 'assets/png/welcome_screen_image.png';
+final String walkthrough1Logo = 'assets/png/walkthrough1_logo.png';
+final String walkthrough2Logo = 'assets/png/walkthrough2_logo.png';
+final String walkthrough3Logo = 'assets/png/walkthrough3_logo.png';
+final String googleLogo = 'assets/png/google.png';

@@ -1,0 +1,33 @@
+final String hungryPanda = 'Hungry Panda';
+final String welcomeText = 'Get The Freshest Fruit Salad Combo';
+final String welcomeSubtitleText =
+    'We deliver the best and freshest fruit salad in town. Order for a combo today!!!';
+final String getStartedText = 'Get Started';
+final String enterFirstNameText = 'Enter your first name';
+final String shoppingMart = 'Food App';
+final String helloText = 'Hello';
+final String homeWelcomeText = 'What do you want to eat today?';
+final String recommendedComboText = 'Recomended Combo';
+final String hotestText = 'Hottest';
+final String populerText = 'Populer';
+final String newComboText = 'New Combo';
+final String streamItems = 'Stream Items';
+final String noStreamFound = 'No Stream Items found';
+final String noItemFound = 'No items found';
+final String staticItems = 'Static Items';
+final String itemsRemoved = 'Item removed successfully!';
+final String apiItems = 'Api\'s Items';
+final String error = 'Error:';
+final String searchItems = 'Search for items';
+final String home = 'Home';
+final String settings = 'Settings';
+final String next = 'Next';
+final String orderOfFood = 'Order for Food';
+final String easyPayment = 'Easy Payment';
+final String fastDelivery = 'Fast Delivery';
+final String walkthough1Subtitle = 'Explore a wide variety of dishes from your favorite restaurants, just a tap away.';
+final String walkthough2Subtitle = 'Hassle-free checkout, Pay your way in seconds.';
+final String walkthough3Subtitle = 'Get your order lightning quick, Right to your doorstep.';
+final String letsYouIn = 'Let\'s you in';
+final String continueWithGoogle = 'Continue with Google';
+

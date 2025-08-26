@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "320991712356",
+    "project_id": "todohive-ff154",
+    "storage_bucket": "todohive-ff154.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320991712356:android:c2e4d89a27f973f7befb71",
+        "android_client_info": {
+          "package_name": "com.example.riverpodpractice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV8YnoTgZsR7r1RdvvdayTS1K25QFvc7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320991712356:android:68ed6a893c2c043abefb71",
+        "android_client_info": {
+          "package_name": "com.example.todoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV8YnoTgZsR7r1RdvvdayTS1K25QFvc7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
