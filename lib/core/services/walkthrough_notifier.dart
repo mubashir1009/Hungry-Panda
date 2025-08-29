@@ -7,3 +7,7 @@ final pageIndicatorProvider = StateProvider<int>((ref){
 final buttonTappedNotifier = StateProvider<bool>((ref){
   return false;
 });
+
+final googleButtonTappedNotifier = StateProvider<bool>((ref){
+  return false;
+});

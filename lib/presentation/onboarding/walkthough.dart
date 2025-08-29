@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpodpractice/core/constants/app_text.dart';
 import 'package:riverpodpractice/core/constants/assets.dart';
-import 'package:riverpodpractice/notifiers/walkthrough_notifier.dart';
+import 'package:riverpodpractice/core/services/walkthrough_notifier.dart';
 import 'package:riverpodpractice/presentation/onboarding/lets_you_in.dart';
 import 'package:riverpodpractice/presentation/onboarding/walkthrough_widgets.dart';
 import 'package:riverpodpractice/widgets/custom_elevated_button.dart';

@@ -1,45 +1,51 @@
 {
   "project_info": {
-    "project_number": "320991712356",
-    "project_id": "todohive-ff154",
-    "storage_bucket": "todohive-ff154.firebasestorage.app"
+    "project_number": "694196710386",
+    "project_id": "hungry-panda-8a399",
+    "storage_bucket": "hungry-panda-8a399.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:320991712356:android:c2e4d89a27f973f7befb71",
+        "mobilesdk_app_id": "1:694196710386:android:de3aa62d161f4f72add96b",
         "android_client_info": {
           "package_name": "com.example.riverpodpractice"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "694196710386-64dvkaddqlbq98uq2u2ctthqbnnlgr50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.riverpodpractice",
+            "certificate_hash": "c3d8b0382f5ec233418e5c90836c059fb0c93d51"
+          }
+        },
+        {
+          "client_id": "694196710386-1jqifjiktu2b2tvm8crauosh4105rjlk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyBV8YnoTgZsR7r1RdvvdayTS1K25QFvc7Q"
+          "current_key": "AIzaSyDGQarJuW1xDH0zay9XipcDQb1eNNQwx0k"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:320991712356:android:68ed6a893c2c043abefb71",
-        "android_client_info": {
-          "package_name": "com.example.todoapp"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBV8YnoTgZsR7r1RdvvdayTS1K25QFvc7Q"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694196710386-1jqifjiktu2b2tvm8crauosh4105rjlk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "694196710386-u41jv312sh6bs5rqdttilmfntchgp7je.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.riverpodpractice"
+              }
+            }
+          ]
         }
       }
     }

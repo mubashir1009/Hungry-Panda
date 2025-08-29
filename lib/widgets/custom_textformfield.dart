@@ -1,4 +1,6 @@
+import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
+import 'package:riverpodpractice/core/services/auth_notifier.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String? label;
@@ -39,7 +41,7 @@ class CustomTextFormField extends StatelessWidget {
   final Iterable<String>? autoFillHints;
   final Function(String)? onFieldSubmitted;
 
-  CustomTextFormField({
+  const CustomTextFormField({
     super.key,
     this.label,
     this.hint,
@@ -95,6 +97,7 @@ class CustomTextFormField extends StatelessWidget {
         readOnly: readOnly ?? false,
         onFieldSubmitted: onFieldSubmitted,
         decoration: InputDecoration(
+          prefixIcon: preffixIcon,
           labelText: label,
           filled: true,
           fillColor: fillColor,
@@ -125,21 +128,22 @@ class CustomTextFormField extends StatelessWidget {
             borderRadius: BorderRadius.circular(radius ?? 40),
             borderSide: BorderSide(
               width: borderWidth ?? 0,
-              color: Theme.of(context).colorScheme.error,
+              color: borderColor ?? Theme.of(context).colorScheme.error,
             ),
           ),
           focusedErrorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(radius ?? 40),
             borderSide: BorderSide(
               width: borderWidth ?? 0,
-              color: Theme.of(context).colorScheme.error,
+              color: borderColor ?? Theme.of(context).colorScheme.error,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(radius ?? 40),
             borderSide: BorderSide(
               width: borderWidth ?? 0,
-              color: Theme.of(context).colorScheme.primary,
+              color:
+                  focusedBorderColor ?? Theme.of(context).colorScheme.primary,
             ),
           ),
           disabledBorder: OutlineInputBorder(
@@ -155,6 +159,7 @@ class CustomTextFormField extends StatelessWidget {
                       isObsecure ?? false
                           ? Icons.visibility_off
                           : Icons.visibility,
+                      color: suffixIconColor,
                     ),
                   )
                   : isConfirmPasswordField ?? false
@@ -164,6 +169,7 @@ class CustomTextFormField extends StatelessWidget {
                       isObsecure ?? false
                           ? Icons.visibility_off
                           : Icons.visibility,
+                      color: suffixIconColor,
                     ),
                   )
                   : null,
@@ -181,9 +187,49 @@ class CustomTextFormField extends StatelessWidget {
                 ? TextInputType.number
                 : textInputType ?? TextInputType.text,
         validator: (value) {
-          return value!.isEmpty ? hint : null;
+          return isEmailField ?? false
+              ? validateEmail(value!)
+              : isPasswordField ?? false
+              ? validatePass(value!)
+              : isConfirmPasswordField ?? false
+              ? validateConPass(value!)
+              : value!.isEmpty
+              ? hint
+              : null;
         },
       ),
     );
+  }
+
+  static String? validateEmail(String value) {
+    if (value.isEmpty) {
+      return "Please enter your email";
+    } else if (!EmailValidator.validate(value)) {
+      return "Enter a valid email";
+    }
+    return null;
+  }
+
+  String? validatePass(String value) {
+    if (value.isNotEmpty) {
+      if (value.length < 8) {
+        return 'Passord must contain at least 8 letters';
+      } else {
+        return null;
+      }
+    }
+    return 'Please enter your password';
+  }
+
+  String? validateConPass(String value) {
+    final currentPassword = passwordController.text;
+    if (value.isNotEmpty) {
+      if (value == currentPassword) {
+        return null;
+      } else {
+        return 'Please enter correct password';
+      }
+    }
+    return 'Please enter password again';
   }
 }

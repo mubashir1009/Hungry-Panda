@@ -3,13 +3,15 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpodpractice/core/init_checks.dart';
+import 'package:riverpodpractice/firebase_options.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'presentation/home/home_screen.dart';
 
 SharedPreferences? sharedPref;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   sharedPref = await SharedPreferences.getInstance();
   runApp(DevicePreview(enabled: !kReleaseMode, builder: (context) => MyApp()));
 }
@@ -48,7 +50,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
         themeMode: ThemeMode.light,
-        home: InitChecks.initialChecks(),
+        // home: InitChecks.initialChecks(),
+        home: HomeScreen()
       ),
     );
   }

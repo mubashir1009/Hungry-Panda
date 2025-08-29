@@ -17,6 +17,7 @@ class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final bool? isObsecure;
   final bool? readOnly;
+  final bool? autoFocus;
   final VoidCallback? onToggleObscure;
   final Widget? suffixIcon;
   final Widget? preffixIcon;
@@ -70,6 +71,7 @@ class CustomTextField extends StatelessWidget {
     this.horContentPadding,
     this.verContentPadding,
     this.onTapOutside,
+    this.autoFocus,
   });
   @override
   Widget build(BuildContext context) {
@@ -77,6 +79,7 @@ class CustomTextField extends StatelessWidget {
       height: height,
       width: width,
       child: TextField(
+        autofocus: autoFocus ?? false,
         onTap: onTap,
         controller: controller,
         obscureText: isObsecure ?? false,

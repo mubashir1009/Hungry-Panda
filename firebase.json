@@ -1,11 +1,1 @@
-{
-  "firestore": {
-    "database": "(default)",
-    "location": "nam5",
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
-  "database": {
-    "rules": "database.rules.json"
-  }
-}
+{"firestore":{"database":"(default)","location":"nam5","rules":"firestore.rules","indexes":"firestore.indexes.json"},"database":{"rules":"database.rules.json"},"flutter":{"platforms":{"android":{"default":{"projectId":"hungry-panda-8a399","appId":"1:694196710386:android:de3aa62d161f4f72add96b","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"hungry-panda-8a399","configurations":{"android":"1:694196710386:android:de3aa62d161f4f72add96b","ios":"1:694196710386:ios:7750a23b11ee6c24add96b","web":"1:694196710386:web:b631a0ab5c7e8f1aadd96b"}}}}}}
